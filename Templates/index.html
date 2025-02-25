@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Data Form</title>
+</head>
+<body>
+    <h2>Enter Your Details</h2>
+    <form action="/" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" required><br>
+
+        <label>Age:</label>
+        <input type="number" name="age" required><br>
+
+        <label>Gender:</label>
+        <select name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <label>Total Income:</label>
+        <input type="number" name="income" required><br>
+
+        <h3>Expenses</h3>
+        <input type="checkbox" name="utilities" value="1"> Utilities:
+        <input type="number" name="utilities_amount" min="0"><br>
+
+        <input type="checkbox" name="entertainment" value="1"> Entertainment:
+        <input type="number" name="entertainment_amount" min="0"><br>
+
+        <input type="checkbox" name="school_fees" value="1"> School Fees:
+        <input type="number" name="school_fees_amount" min="0"><br>
+
+        <input type="checkbox" name="shopping" value="1"> Shopping:
+        <input type="number" name="shopping_amount" min="0"><br>
+
+        <input type="checkbox" name="healthcare" value="1"> Healthcare:
+        <input type="number" name="healthcare_amount" min="0"><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
